@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0275802BA86C0C002D0CB9 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A02757F2BA86C0C002D0CB9 /* TestModel.swift */; };
+		7A49C49B2BA81DAD006D6B79 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A49C49A2BA81DAD006D6B79 /* TestView.swift */; };
+		7A49C49D2BA81DBA006D6B79 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A49C49C2BA81DBA006D6B79 /* TestViewModel.swift */; };
+		7A49C4A02BA81E96006D6B79 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 7A49C49F2BA81E96006D6B79 /* GooglePlaces */; };
+		7A49C4A22BA81F64006D6B79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A49C4A12BA81F64006D6B79 /* AppDelegate.swift */; };
 		7AE0CA3C2BA81AB3008B0ECD /* TrafficAlertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0CA3B2BA81AB3008B0ECD /* TrafficAlertApp.swift */; };
 		7AE0CA3E2BA81AB3008B0ECD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0CA3D2BA81AB3008B0ECD /* ContentView.swift */; };
 		7AE0CA402BA81AB4008B0ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE0CA3F2BA81AB4008B0ECD /* Assets.xcassets */; };
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A02757F2BA86C0C002D0CB9 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		7A49C49A2BA81DAD006D6B79 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		7A49C49C2BA81DBA006D6B79 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		7A49C4A12BA81F64006D6B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE0CA382BA81AB3008B0ECD /* TrafficAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE0CA3B2BA81AB3008B0ECD /* TrafficAlertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficAlertApp.swift; sourceTree = "<group>"; };
 		7AE0CA3D2BA81AB3008B0ECD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A49C4A02BA81E96006D6B79 /* GooglePlaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A49C4992BA81D9C006D6B79 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				7A49C49A2BA81DAD006D6B79 /* TestView.swift */,
+				7A49C49C2BA81DBA006D6B79 /* TestViewModel.swift */,
+				7A02757F2BA86C0C002D0CB9 /* TestModel.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		7AE0CA2F2BA81AB3008B0ECD = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +114,9 @@
 		7AE0CA3A2BA81AB3008B0ECD /* TrafficAlert */ = {
 			isa = PBXGroup;
 			children = (
+				7A49C4992BA81D9C006D6B79 /* Test */,
 				7AE0CA3B2BA81AB3008B0ECD /* TrafficAlertApp.swift */,
+				7A49C4A12BA81F64006D6B79 /* AppDelegate.swift */,
 				7AE0CA3D2BA81AB3008B0ECD /* ContentView.swift */,
 				7AE0CA3F2BA81AB4008B0ECD /* Assets.xcassets */,
 				7AE0CA412BA81AB4008B0ECD /* Preview Content */,
@@ -143,6 +165,9 @@
 			dependencies = (
 			);
 			name = TrafficAlert;
+			packageProductDependencies = (
+				7A49C49F2BA81E96006D6B79 /* GooglePlaces */,
+			);
 			productName = TrafficAlert;
 			productReference = 7AE0CA382BA81AB3008B0ECD /* TrafficAlert.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +240,10 @@
 				Base,
 			);
 			mainGroup = 7AE0CA2F2BA81AB3008B0ECD;
+			packageReferences = (
+				7A49C49E2BA81E96006D6B79 /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+				7A49C4A32BA82D22006D6B79 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			productRefGroup = 7AE0CA392BA81AB3008B0ECD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A49C49B2BA81DAD006D6B79 /* TestView.swift in Sources */,
 				7AE0CA3E2BA81AB3008B0ECD /* ContentView.swift in Sources */,
 				7AE0CA3C2BA81AB3008B0ECD /* TrafficAlertApp.swift in Sources */,
+				7A0275802BA86C0C002D0CB9 /* TestModel.swift in Sources */,
+				7A49C4A22BA81F64006D6B79 /* AppDelegate.swift in Sources */,
+				7A49C49D2BA81DBA006D6B79 /* TestViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +610,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A49C49E2BA81E96006D6B79 /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		7A49C4A32BA82D22006D6B79 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A49C49F2BA81E96006D6B79 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A49C49E2BA81E96006D6B79 /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7AE0CA302BA81AB3008B0ECD /* Project object */;
 }
